@@ -5,13 +5,13 @@ on:
     inputs:
       ROM_URL:
         description: "ROM_URL"
-        default: "ota.azureedge.net/OS1.0.2.0.UMFIDXM/miui_ARISTOTLEIDGlobal_OS1.0.2.0.UMFIDXM_b9ccc74619_14.0.zip"
+        default: ""
       DEVICE_NAME:
         description: "DEVICE_NAME"
         default: "aristotle"
       EXTRACTED_FILES:
         description: "EXTRACTED_FILES"
-        default: "boot.img, dtbo.img, vendor_boot.img"
+        default: "boot.img, dtbo.img, vendor_boot.img, vbmeta.img"
 
 jobs:
   build-and-release:
